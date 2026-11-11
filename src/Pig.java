@@ -1,11 +1,11 @@
 public class Pig extends Animal {
 
-    public Pig(String name, int age, String type) {
-        super(name, age, type);
+    public Pig(String name, int age) {
+        super(name, age, "Pig");
     }
 
     @Override
     public void makeSound() {
-        System.out.println("Pig says oink");
+        System.out.println("Oink" + " (" + getName() + ")");
     }
 }
